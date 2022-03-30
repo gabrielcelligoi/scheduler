@@ -47,7 +47,7 @@ Jest, Storybook and Cypress tests are used through the development of the projec
 
 ## Final Product
 
-!["Home Page"]()
+!["Home Page"](https://github.com/gabrielcelligoi/scheduler/blob/master/docs/Scheduler.png?raw=true)
 
 
 
