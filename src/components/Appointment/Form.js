@@ -2,22 +2,6 @@ import React, { useState } from "react";
 import InterviewerList from "components/InterviewerList";
 import Button from "components/Button";
 
-// The <Form> component should track the following state:
-
-// student:String
-// interviewer:Number
-// The <Form> component should have the following actions:
-
-// setStudent:Function
-// setInterviewer:Function
-// The <Form> component should take the following props:
-
-// student:String
-// interviewers:Array
-// interviewer:Number
-// onSave:Function
-// onCancel:Function
-
 
 export default function Form(props) {
   const [student, setStudent] = useState(props.student || "");

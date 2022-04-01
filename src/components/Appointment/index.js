@@ -110,7 +110,7 @@ export default function Appointment(props) {
       }
       {mode === ERROR_DELETE && (
         <Error
-          onClose={() => back()}
+          onClose={() => transition(EMPTY)}
           message="Error, cannot delete appointment. Please try again."
         />
       )}
