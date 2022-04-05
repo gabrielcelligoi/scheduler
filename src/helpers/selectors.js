@@ -14,7 +14,7 @@ export function getAppointmentsForDay(state, day) {
 
   for (let appointmentId of appointments) {
     for (let appointment in state.appointments) {
-      if (appointmentId == appointment) {
+      if (appointmentId === state.appointments[appointment].id) {
         appointmentsArray.push(state.appointments[appointment]);
       }
     }
@@ -40,7 +40,7 @@ export function getInterviewersForDay(state, day) {
 
   for (let interviewerId of interviewers) {
     for (let interviewer in state.interviewers) {
-      if (interviewerId == interviewer) {
+      if (interviewerId === state.interviewers[interviewer].id) {
         interviewersArray.push(state.interviewers[interviewer]);
       }
     }
@@ -55,7 +55,7 @@ export function getInterview(state, interview) {
 
   if (interview) {
     for (let interviewId in state.interviewers) {
-      if (interviewId == interview.interviewer) {
+      if (state.interviewers[interviewId].id === interview.interviewer) {
         interview.interviewer = state.interviewers[interviewId];
       }
     }

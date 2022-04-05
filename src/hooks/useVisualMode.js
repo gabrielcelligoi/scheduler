@@ -16,7 +16,7 @@ export default function useVisualMode(initial) {
 
   function back() {
     setHistory((prev) => {
-      if (prev.length === 1) {
+      if (history.length === 1) {
         return [...prev];
       }
 
