@@ -85,10 +85,6 @@ function useApplicationData() {
       [id]: appointment
     };
 
-    setState({
-      ...state,
-      appointments
-    });
 
     function updateSpots(state, appointments) {
       //make copy of days array
